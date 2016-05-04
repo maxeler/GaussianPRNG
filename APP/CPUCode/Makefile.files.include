@@ -1,0 +1,5 @@
+#
+# This file is managed by MaxIDE. Do NOT change.
+#
+HEADERS:= random_mt.h 
+SOURCES:= Gaussian.c random_mt.c 

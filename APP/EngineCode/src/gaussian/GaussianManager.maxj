@@ -1,0 +1,17 @@
+package gaussian;
+
+import com.maxeler.maxcompiler.v2.build.EngineParameters;
+import com.maxeler.maxcompiler.v2.managers.standard.Manager;
+
+public class GaussianManager extends Manager {
+	public GaussianManager(EngineParameters params) {
+		super(params);
+
+		setKernel(new GaussianKernel(makeKernelParameters()));
+		setIO(IOType.ALL_CPU);
+	}
+
+	public static void main(String[] args) {
+		new GaussianManager(new EngineParameters(args)).build();
+	}
+}

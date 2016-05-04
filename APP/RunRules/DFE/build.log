@@ -1,0 +1,103 @@
+Thu 18:42: ########################################## 
+Thu 18:42: Compiling.
+Thu 18:42: ########################################## 
+
+Thu 18:42: MaxCompiler version: 2015.2.
+Thu 18:42: Build DFE run rule for GaussianRNG start time: Thu Apr 14 18:42:15 BST 2016.
+Thu 18:42: Project location: /home/mluszek/workspace/GaussianRNG.
+Thu 18:42: Detailed build log: /home/mluszek/workspace/GaussianRNG/RunRules/DFE/build.log.
+
+Thu 18:42: Compiling Engine Code.
+Thu 18:42: Building Gaussian.max file. 
+Thu 18:42: Setting environment variable:
+Thu 18:42: MAXCOMPILER_BUILD_DIR : /network-scratch/mluszek/maxdc_builds/
+Thu 18:42: MAX_BUILDPARAMS : DFEModel='MAIA' target='DFE' maxFileName='Gaussian'  
+Thu 18:42: Building output:
+Thu 18:42: MaxCompiler version: 2015.2
+Thu 18:42: Build "Gaussian" start time: Thu Apr 14 18:42:20 BST 2016
+Thu 18:42: Main build process running as user mluszek on host workstation025
+Thu 18:42: Build location: /scratch/mluszek/maxdc_builds/14-04-16/Gaussian_MAIA_DFE
+Thu 18:42: Detailed build log available in "_build.log"
+Thu 18:42: Instantiating manager
+Thu 18:42: Instantiating kernel "GaussianKernel"
+Thu 18:42: frac2 has type dfeRawBits(32)
+Thu 18:42: frac2 has type dfeRawBits(32)
+Thu 18:42: Compiling manager (CPU I/O Only)
+Thu 18:42: 
+Thu 18:42: Compiling kernel "GaussianKernel"
+Thu 18:42: Generating input files (VHDL, netlists, MegaWizard/CoreGen)
+Thu 18:42: Running back-end  build (16 phases)
+Thu 18:42: (1/16) - Prepare MaxFile Data (GenerateMaxFileDataFile)
+Thu 18:42: (2/16) - Prepare for Placement (QuartusMap)
+Thu 18:47: (3/16) - Generate Incremental Netlist (QuartusCdb)
+Thu 18:47: (4/16) - Generate Resource Report (AlteraResourceUsageBuildPass)
+Thu 18:47: (5/16) - Generate Annotated Source Code (AlteraResourceAnnotationBuildPass)
+Thu 18:47: (6/16) - Analyse Resource Usage (AlteraResourceCounterPass)
+Thu 18:47: 
+Thu 18:47: About to start chip vendor Map/Place/Route toolflow. This will take some time.
+Thu 18:47: For this compile, we estimate this process may take up to 30 minutes.
+Thu 18:47: We recommend running in simulation to verify correctness before building hardware.
+Thu 18:47: 
+Thu 18:47: PRELIMINARY RESOURCE USAGE
+Thu 18:47: Logic utilization:      14859 / 262400   (5.66%)
+Thu 18:47: Multipliers (18x18):       56 / 3926     (1.43%)
+Thu 18:47: Block memory (bits):  1167055 / 52572160 (2.22%)
+Thu 18:47: 
+Thu 18:47: (7/16) - Place and Route DFE (AlteraMPPR)
+Thu 18:47: Executing MPPR with 1 cost table and 1 thread.
+Thu 18:47: MPPR: Starting 1 cost table
+Thu 19:00: MPPR: Cost table 1 met timing with score 0 (best score 0)
+Thu 19:00: (8/16) - Generate Configuration (QuartusAsm)
+Thu 19:02: (9/16) - Convert Programming File (QuartusCpf)
+Thu 19:03: (10/16) - Update Checksum (UpdateChecksumBuildPass)
+Thu 19:03: (11/16) - Generate Incremental Netlist (QuartusCdb)
+Thu 19:03: (12/16) - Generate Configuration (QuartusAsm)
+Thu 19:05: (13/16) - Convert Programming File (QuartusCpf)
+Thu 19:06: (14/16) - Generate Resource Report (AlteraResourceUsageBuildPass)
+Thu 19:06: (15/16) - Generate Annotated Source Code (AlteraResourceAnnotationBuildPass)
+Thu 19:06: (16/16) - Generate MaxFile (GenerateMaxFileAltera)
+Thu 19:06: 
+Thu 19:06: FINAL RESOURCE USAGE
+Thu 19:06: Logic utilization:    12351 / 262400 (4.71%)
+Thu 19:06:   Primary FFs:        23876 / 524800 (4.55%)
+Thu 19:06:   Secondary FFs:       1337 / 524800 (0.25%)
+Thu 19:06: Multipliers (18x18):     56 / 3926   (1.43%)
+Thu 19:06:   DSP blocks:            28 / 1963   (1.43%)
+Thu 19:06: Block memory (M20K):    138 / 2567   (5.38%)
+Thu 19:06: 
+Thu 19:06: MaxFile: /scratch/mluszek/maxdc_builds/14-04-16/Gaussian_MAIA_DFE/results/Gaussian.max (MD5Sum: 26afa4ecc17c97fffc1baa5023fcc785)
+Thu 19:06: Build completed: Thu Apr 14 19:06:39 BST 2016 (took 24 mins, 19 secs)
+Thu 19:06: Executing command:
+Thu 19:06: cp /home/mluszek/workspace/GaussianRNG/RunRules/DFE/maxfiles/Gaussian.h /home/mluszek/workspace/GaussianRNG/RunRules/DFE/include/Gaussian.h 
+Thu 19:06: Command output:
+Thu 19:06: Building: Gaussian.max file finished.
+Thu 19:06: Engine build finished.
+Thu 19:06: Compiling CPU Code.
+Thu 19:06: Run CPU project make files updating
+Thu 19:06: Executing command:
+Thu 19:06: java -jar /network-raid/opt/maxcompiler-2015.2/lib/MaxIDE/projectAdmin.jar -u /home/mluszek/workspace/GaussianRNG DFE 
+Thu 19:06: Command output:
+
+Thu 19:06: MaxCompiler Project Admin Tool Version 2015.2.00001
+Thu 19:06:  Copyright Maxeler Technologies 2010 - 2015. All rights reserved.
+Thu 19:06: Handler version 2
+Thu 19:06: Updating RunRule dependent Makefiles for RunRule 'DFE'
+Thu 19:06: 	Updating: DFE
+Thu 19:06: Found makefiles: 1
+Thu 19:06: 	Updated: DFE
+Thu 19:06: Run CPU make.
+Thu 19:06: make RUNRULE=DFE 
+Thu 19:06: Command output:
+Thu 19:06: make -f Makefile.rules build
+Thu 19:06: make[1]: Entering directory `/home/mluszek/workspace/GaussianRNG/CPUCode'
+Thu 19:06: "/network-raid/opt/maxcompiler-2015.2/bin/sliccompile" ../RunRules/DFE/maxfiles/Gaussian.max ../RunRules/DFE/objects/maxfiles/slic_Gaussian.o
+Thu 19:06: Processing maxfile for MAIA from '../RunRules/DFE/maxfiles/Gaussian.max'.
+Thu 19:06: /network-raid/opt/maxcompiler-2015.2/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /network-raid/opt/maxcompiler-2015.2/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_7259413646610375055/cobject/max_6160718149748016683.c -o /tmp/sliccompile_7259413646610375055/cobject/max_6160718149748016683.c.o 
+Thu 19:06: /network-raid/opt/maxcompiler-2015.2/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /network-raid/opt/maxcompiler-2015.2/include/slic -DMAXFILE_INC="/home/mluszek/workspace/GaussianRNG/CPUCode/../RunRules/DFE/maxfiles/Gaussian.max" -DSLIC_NO_DESTRUCTORS -c /network-raid/opt/maxcompiler-2015.2/src/slicinterface/MaxFileInit.c -o max_2446375683183566631.o 
+Thu 19:06: ld -r /tmp/sliccompile_7259413646610375055/cobject/max_6160718149748016683.c.o max_2446375683183566631.o -o slic_Gaussian.o 
+Thu 19:06: Copying .max file C object into '/home/mluszek/workspace/GaussianRNG/CPUCode/../RunRules/DFE/objects/maxfiles'
+Thu 19:06: cc -std=gnu99 -g -O3 -Wall -Wextra -I../RunRules/DFE/include  -I '/network-raid/opt/maxcompiler-2015.2/include/slic'  -o ../RunRules/DFE/binaries/Gaussian ../RunRules/DFE/objects/maxfiles/slic_Gaussian.o ../RunRules/DFE/objects/c/Gaussian.o ../RunRules/DFE/objects/c/random_mt.o -g -O3  -L '/network-raid/opt/maxcompiler-2015.2/lib' -lslic -L '/network-raid/opt/maxeleros-2015.2/maxeleros/lib' -lmaxeleros -lpthread -lm -lrt 
+Thu 19:06: make[1]: Leaving directory `/home/mluszek/workspace/GaussianRNG/CPUCode'
+Thu 19:06: Build completed: Thu Apr 14 19:06:47 BST 2016
+
+
